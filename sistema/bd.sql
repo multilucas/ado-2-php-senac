@@ -1,4 +1,3 @@
-
 PRAGMA foreign_keys = ON;
 
 CREATE TABLE IF NOT EXISTS pessoa (
@@ -13,5 +12,5 @@ CREATE TABLE IF NOT EXISTS pessoa (
     CHECK (interesse_mulheres = 1 OR interesse_mulheres = 0),
     CHECK (sexo = 'M' OR sexo = 'F'),
     CHECK (date(dt_nascimento) IS NOT NULL),
-    CHECK ((LENGTH(url_foto) > 10 OR LENGHT(url_foto) < 1000) OR url_foto IS NULL)
- )
+    CHECK (url_foto IS NULL OR LENGTH(url_foto) BETWEEN 10 AND 1000)
+);
