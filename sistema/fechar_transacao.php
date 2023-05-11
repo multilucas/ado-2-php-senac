@@ -1,8 +1,7 @@
 <?php
-if ($transacaoOK){
+if ($transacaoOk) {
     $pdo->commit();
 } else {
     $pdo->rollback();
 }
 $pdo = null;
-?>

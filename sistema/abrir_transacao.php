@@ -1,6 +1,5 @@
- <?php
-include_once "conecta_sqlite.php";
+<?php
+include_once "conecta-sqlite.php";
 $pdo = conectar();
-$transacaoOK = false;
+$transacaoOk = false;
 $pdo->beginTransaction();
-?>
