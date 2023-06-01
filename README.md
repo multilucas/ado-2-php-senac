@@ -1,3 +1,6 @@
+# Integrantes
+Lucas Cristiano Lopes, Thiago Dias, Bruno Lafayette.
+
 # Objetivo
 
 Desenvolva um CRUD utilizando o SQLite como banco de dados (assim fica mais fácil de testar).
